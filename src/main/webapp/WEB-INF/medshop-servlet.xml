@@ -23,7 +23,7 @@
 
        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
             <property name="location">
-                 <value>classpath:META-INF/database.properties</value>
+                 <value>classpath:META-INF/properties/database.properties</value>
             </property>
        </bean>
 
