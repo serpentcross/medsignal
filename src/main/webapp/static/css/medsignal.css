@@ -42,3 +42,28 @@
 .uk-navbar-right {
     background-color: rgba(255, 220, 238, 0.71);
 }
+
+.uk-text-medium {
+    color: #FFFFFF;
+}
+
+.shop-item-pic {
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+}
+
+.shop-order-button {
+    border-radius: 50px;
+    border-color: #fff;
+    border-style: groove;
+    border-width: 1px;
+    color:#FFFFFF;
+}
+
+.shop-gradient-background {
+    background: #6bba70;
+    background: -moz-linear-gradient(top, #6bba70 0%, #6bba70 100%);
+    background: -webkit-linear-gradient(top, #6bba70 0%,#6bba70 100%);
+    background: linear-gradient(to bottom, #6bba70 0%,#6bba70 100%);
+}
