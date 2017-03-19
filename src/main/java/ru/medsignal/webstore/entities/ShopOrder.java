@@ -47,6 +47,7 @@ public class ShopOrder implements Serializable {
 	private Date orderDate;
 
 	@ManyToMany(mappedBy="shopOrders")
+	@Getter @Setter
 	private List<Item> items;
 
 	@Override

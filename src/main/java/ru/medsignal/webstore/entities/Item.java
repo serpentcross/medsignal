@@ -1,5 +1,8 @@
 package ru.medsignal.webstore.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -46,7 +49,8 @@ public class Item implements Serializable {
 	@Getter @Setter
 	private String artikul;
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JsonBackReference
 	@JoinTable(name="shoporder_item", joinColumns=@JoinColumn(name="item", referencedColumnName="id"), inverseJoinColumns=@JoinColumn(name="shoporder", referencedColumnName="id"))
 	@Getter @Setter
 	private List<ShopOrder> shopOrders;
