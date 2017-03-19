@@ -27,5 +27,18 @@
 }
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
-    background-color: #faebd7;
+    background-color: rgba(137, 255, 193, 0.71);
+}
+
+@media (min-width: 1200px) {
+    /* Horizontal */
+    .uk-grid {
+        margin-left: 0;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+}
+
+.uk-navbar-right {
+    background-color: rgba(255, 220, 238, 0.71);
 }
