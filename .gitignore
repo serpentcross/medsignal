@@ -16,8 +16,9 @@ npm-debug.log
 
 **/generated-source/
 **/script_generated/
-
-/target
+target/
+app.bundle.js
+styles.css
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
