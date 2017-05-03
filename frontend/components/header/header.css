@@ -1,0 +1,13 @@
+.bHeader {
+    background-color: #00c88f;
+    padding: 52px 0px;
+}
+
+.eMainLogo {
+    display:inline-block;
+    width: 348px;
+    height: 57px;
+    position:relative;
+    background-repeat: no-repeat;
+    background-image: url("../img/logo.jpg");
+}
