@@ -11,7 +11,7 @@ module.exports = {
 
     output: {
         path: serverSrcPath,
-        filename: 'app.bundle.js'
+        filename: 'bundle.js'
     },
 
     plugins: [
@@ -21,9 +21,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /.jsx$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                query: {
+                    presets:['es2015', 'react', 'stage-2']
+                }
             },
             {
                 test: /.css/,
